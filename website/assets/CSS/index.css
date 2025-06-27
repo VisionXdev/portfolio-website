@@ -1,0 +1,42 @@
+
+:root {
+    /* Brand Colors */
+    --primary-red: #ff7657;
+    --accent-blue: #6ec1e4;
+    --pure-white: #ffffff;
+    --pure-black: #000000;
+
+    /* Neutrals */
+    --gray-light: #cccccc;
+    --gray-dark: #222222;
+
+    /* Backgrounds */
+    --bg-dark: #0b0b0b;
+    --bg-soft: #1a1a1a;
+
+    /* Hover/Effects */
+    --hover-red: #ff5c3d;
+    --hover-blue: #58b6dd;
+    --shadow-dark: rgba(0, 0, 0, 0.6);
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body css */
+body {
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* header css start */
+
+
+
+/* header css end */
