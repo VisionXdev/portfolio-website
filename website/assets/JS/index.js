@@ -8,18 +8,20 @@ window.addEventListener("load", () => {
   }, 2000); // Delay before fading out loader
 });
 
-// Hamburger toggle
+// Toggle menu visibility on small screens
 document.addEventListener("DOMContentLoaded", function () {
-  var toggle = document.getElementById("menu-toggle");
+  const toggle = document.getElementById("menu-toggle");
+
   toggle.addEventListener("click", function () {
     document.body.classList.toggle("menu-open");
   });
+
   toggle.addEventListener("keypress", function (e) {
     if (e.key === "Enter" || e.key === " ") {
       document.body.classList.toggle("menu-open");
     }
   });
-  // Close nav on link click (mobile)
+
   document.querySelectorAll("nav a").forEach(function (link) {
     link.addEventListener("click", function () {
       if (window.innerWidth <= 768) {
@@ -30,3 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // GSAP animations
+var typed = new Typed(".typed", {
+  strings: ["Web Developer", "Graphic Designer"],
+  typeSpeed: 50,
+  backSpeed: 55,
+  loop: true,
+});
