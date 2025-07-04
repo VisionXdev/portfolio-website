@@ -128,7 +128,7 @@ footer {
     scroll-behavior: smooth;
 }
 
-hr{
+hr {
     margin-top: 150px;
 }
 
@@ -178,6 +178,10 @@ header div {
 header img {
     height: 44px;
     width: auto;
+    margin-left: 30px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
     object-fit: contain;
     transform: scale(3.5);
 }
@@ -240,8 +244,9 @@ div#menu-toggle {
 div#menu-toggle span {
     display: block;
     height: 3px;
-    width: 100%;
+    width: 30px;
     background: linear-gradient(90deg, #ff6347, #5ab4c8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 2px;
     transition: all 0.35s cubic-bezier(.77, 0, .18, 1);
 }
@@ -249,7 +254,7 @@ div#menu-toggle span {
 /* Responsive */
 @media (max-width: 768px) {
     header div {
-        padding: 0.85rem 1.1rem;
+        padding: 13.6px 17.6px;
     }
 
     nav {
@@ -261,7 +266,7 @@ div#menu-toggle span {
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
-        padding: 0 1.5rem;
+        padding: 0 24px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13);
         max-height: 0;
         overflow: hidden;
@@ -271,9 +276,9 @@ div#menu-toggle span {
     }
 
     nav a {
-        padding: 1.05rem 0;
+        padding: 16.8px 0;
         width: 100%;
-        font-size: 1.09rem;
+        font-size: 17px;
     }
 
     div#menu-toggle {
@@ -320,7 +325,7 @@ div#menu-toggle span {
 }
 
 .hero-section h1 {
-    font-size: 3.8rem;
+    font-size: 80px;
     font-weight: 800;
     margin-bottom: 1rem;
     background: linear-gradient(90deg, #ff6347, #5ab4c8);
@@ -329,8 +334,8 @@ div#menu-toggle span {
     animation: slideUp 1s ease 0.4s both;
 }
 
-.hero-section p {
-    font-size: 1.6rem;
+.hero-p-ty {
+    font-size: 50px;
     font-weight: 400;
     color: #ccc;
     animation: slideUp 1s ease 0.6s both;
@@ -338,6 +343,7 @@ div#menu-toggle span {
 
 .hero-section .typed {
     color: #5ab4c8;
+    font-size: 30px;
     font-weight: 600;
     border-right: 2px solid #5ab4c8;
     padding-left: 6px;
@@ -357,7 +363,7 @@ div#menu-toggle span {
 /* Responsive tweak for small screens */
 @media (max-width: 768px) {
     .hero-section p {
-        font-size: 1rem;
+        font-size: 10px;
         line-height: 1.6;
         text-align: left;
     }
@@ -628,10 +634,12 @@ div#menu-toggle span {
 
     .hero-text h1 {
         font-size: 2.5rem;
+        text-align: center;
     }
 
     .hero-text p {
         font-size: 1.2rem;
+        text-align: center;
     }
 
     .btn-53 {

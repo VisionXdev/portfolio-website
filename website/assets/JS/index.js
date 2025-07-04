@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     loader.classList.add("hidden");
     content.classList.add("visible");
-  }, 2000); // Delay before fading out loader
+  }, 1000); // Delay before fading out loader
 });
 
 // Toggle menu visibility on small screens
